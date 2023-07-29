@@ -1,0 +1,97 @@
+.right .title {
+  color: #4d4d4d;
+  text-align: left;
+  font-family: Satoshi;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px; /* 156.25% */
+  letter-spacing: -2px;
+}
+
+.right {
+  margin-left: 80px;
+}
+
+.right .sub-title-1 {
+  font-family: Zodiak;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 77px; /* 156.25% */
+  letter-spacing: -2px;
+
+  background: linear-gradient(171deg, #fd00cb 0%, #99b9ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.right .sub-title-2 {
+  color: #4d4d4d;
+  font-family: Satoshi;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px; /* 156.25% */
+  letter-spacing: -2px;
+}
+
+.right .name {
+  color: #2a1d3f;
+  font-family: Satoshi;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 62.5% */
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+
+  margin-top: 35px;
+}
+
+.about-text {
+  color: #1f172c;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 125% */
+  letter-spacing: 0.45px;
+
+  margin-top: 30px;
+}
+
+.right .connnect-button {
+  border-radius: 50px;
+  border: 1px solid #1f172c;
+  display: flex;
+  padding: 18.17px 42px 17.83px 18px;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+
+.right .connnect-button:hover {
+opacity: 1;
+background: white;
+}
+
+.right .connnect-button .connect-icon {
+  height: 28px;
+  background-color: #1f172c;
+  border-radius: 50%;
+}
+
+.right .connnect-button .text {
+  color: #1f172c;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px; /* 149.625% */
+  letter-spacing: 0.24px;
+  margin: 0;
+  margin-left: 20px;
+}
