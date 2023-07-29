@@ -1,17 +1,23 @@
+import { useContext } from "react";
+import { UserContext } from "../App";
+
 import "./right.css";
 import Icon from "./assests/connect-hand.png";
 
 export const Right = () => {
+  const data = useContext(UserContext);
+
+  console.log(data)
+  const userName = data?.user_info?.name;
+  const about = data?.user_info?.about;
   return (
     <div className="right">
       <h5 className="title">Crafting Experiences</h5>
       <h5 className="sub-title-1">Inspiring</h5>
       <h5 className="sub-title-2">Connections</h5>
-      <h5 className="name">Alex Turner</h5>
+      <h5 className="name">{userName}</h5>
       <p className="about-text">
-        a creative and versatile Product Designer. As a 'Product Design
-        Specialist' at InnovateX Labs, I believe in the power of great design to
-        transform ideas into extraordinary user-centric products.
+        {about}
       </p>
 
       <div className="connnect-button">

@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import { UserContext } from "../App";
 import Background from "./assests/Vector.png";
 
 export const Left = () => {
+  const data = useContext(UserContext);
+
+  const imagePath = data?.user_info?.profile_picture;
   return (
     <div>
       <img
@@ -8,15 +13,12 @@ export const Left = () => {
         alt="Your SVG"
         style={{ position: "absolute", width: "100%" }}
       />
-      
+
       <img
-        src={
-          "https://firebasestorage.googleapis.com/v0/b/efolio-portfolio.appspot.com/o/profile_picture%2Fimage_cropper_1680248184034.jpg?alt=media&token=53a40862-eaa6-4725-851f-a57383259231"
-        }
-        alt="Your SVG"
+        src={imagePath}
+        alt="Profile picture"
         className="custom-shape-image"
       />
-      
     </div>
   );
 };
