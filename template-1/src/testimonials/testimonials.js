@@ -1,7 +1,14 @@
 import React from 'react';
 import './testimonials.css';
+import { useContext } from "react";
+import { UserContext } from "../App";
+import Background from "../about/assests/Vector.png";
 
 const Testimonials = () => {
+
+    const data = useContext(UserContext);
+
+    const imagePath = data?.user_info?.profile_picture;
     return (
         <div className="testimonials-section">
             <div className="testimonials-header">
@@ -75,6 +82,39 @@ const Testimonials = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='contact-me-container'>
+
+                <div>
+                    <p className='contact-me-container-text-1'>
+                        Let's collaborate and design something
+                    </p>
+
+                    <p className='contact-me-container-text-2'>
+                        extraordinary together!
+                    </p>
+                </div>
+
+                <div className='Catch-me-on-Social-Network-Container'>
+
+                    <img
+                        src={imagePath}
+                        alt="Profile picture"
+                        className="shape-image"
+                    />
+                    <p className='Catch-me-on-Social-Network-Text'>
+                        Catch me on Social Network
+                    </p>
+
+                    <div className='Links'>
+                        <a className='fb-link' href=''>
+                            <p className='link-text'>Fb.</p>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     );
