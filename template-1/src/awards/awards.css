@@ -86,21 +86,13 @@
 }
 
 .award-card {
-  justify-content: center;
-  align-items: flex-start;
-  border-radius: 200px;
-  margin-right: 80px;
-}
-
-.award-card:last-child {
-  margin-right: 0px;
-  border-radius: 20px;
-}
-
-.award-card img {
-  width: 265px;
-  height: 332.555px;
-  flex-shrink: 0;
+  background: #1e1e1e;
+  color: white;
+  margin: 20px 10px;border-radius: 20px;
+  overflow: hidden;
+  max-width: 20vw;
+  position: relative;
+  margin: 0 auto;
 }
 
 .award-info {
@@ -139,4 +131,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: 88px;
+}
+
+.award-image {
+
 }

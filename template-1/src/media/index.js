@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Icon from "./header-icon.png";
 
@@ -21,7 +21,7 @@ function Media() {
 
   const rest = [];
 
-  while (items.length > 0) {
+  while (items?.length > 0) {
     if (items4.length + items.length >= 4) {
       items4.push(items.pop());
       continue;
@@ -36,7 +36,7 @@ function Media() {
   }
 
   return (
-    <div className={`media`}>
+    <div className={`media`} id="media">
       <Container>
         <Row>
           <Col>
@@ -48,9 +48,9 @@ function Media() {
           </Col>
         </Row>
 
-        {items4.length && <MediaBox4 items={items4} />}
-        {items3.length && <MediaBox3 items={items3} />}
-        {rest.length && <MediaBoxRest items={rest} />}
+        {items4.length ? <MediaBox4 items={items4} /> : null}
+        {items3.length ? <MediaBox3 items={items3} /> : null}
+        {rest.length ? <MediaBoxRest items={rest} /> : null}
 
       </Container>
     </div>

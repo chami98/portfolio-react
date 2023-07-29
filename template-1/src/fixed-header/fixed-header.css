@@ -50,6 +50,7 @@
 .fixed-header a:active {
   border: 2px solid #f9f2fc;
   background: #2a1d3f;
+  color: white;
 }
 
 .fixed-header ul {

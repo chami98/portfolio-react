@@ -12,7 +12,7 @@ export const MediaBox = ({ item: { src }, link, rows }) => {
         isVisible ? "visible" : "not-visible"
       } media-box-${rows}row`}
     >
-      <img src={src} />
+      <img src={src} alt="media image" />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, } from "react";
 import "./App.css";
 import About from "./about";
 import { FixedHeader } from "./fixed-header/fixed-header";

@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 
-export const useFirstVisible = () => {
+export const useFirstVisible = (visibility = 0.2) => {
   const [isVisible, setIsVisible] = useState(false);
   const targetRef = useRef(null);
 
@@ -16,7 +16,7 @@ export const useFirstVisible = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.2, // 0.5 means 50% visibility required to trigger the animation
+      threshold: visibility, // 0.5 means 50% visibility required to trigger the animation
     };
 
     const observer = new IntersectionObserver(handleIntersect, options);
