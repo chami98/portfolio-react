@@ -1,4 +1,4 @@
-import { useFirstVisible } from "../utils/useFirstVisble";
+import { useFirstVisible } from "../utils/use-first-visble";
 
 export const MediaBox = ({ item: { src }, link, rows }) => {
   const { isVisible, targetRef } = useFirstVisible();

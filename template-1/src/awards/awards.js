@@ -5,7 +5,8 @@ import Card from "react-bootstrap/Card";
 import { UserContext } from "../App";
 
 import Background from "../assests/profile_background.svg";
-import { OpacityAnimated } from "../utils/OpacityAnimated";
+import { OpacityAnimated } from "../utils/opacity-animated";
+import { SectionTitle } from "../utils/section-title";
 
 const Awards = () => {
   const data = useContext(UserContext);
@@ -24,7 +25,10 @@ const Awards = () => {
       <div className="awards-section" id="awards">
         <OpacityAnimated visibiltiy={0.9}>
           <div className="awards-container">
-            <div className="awards-title">
+            <Container>
+              <SectionTitle title="Awards" white/>
+            </Container>
+            {/* <div className="awards-title">
               <svg
                 className="awards-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +56,7 @@ const Awards = () => {
                   fill="#99B9FF"
                 />
               </svg>
-            </div>
+            </div> */}
             <div className="awards-content">
               <p className="awards-heading">Designing Innovation,</p>
               <div className="awards-subheading">

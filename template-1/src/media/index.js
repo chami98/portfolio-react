@@ -7,6 +7,7 @@ import { MediaBox4 } from "./media-box-4";
 import { MediaBox3 } from "./media-box-3";
 import { UserContext } from "../App";
 import { MediaBoxRest } from "./media-box-rest";
+import { SectionTitle } from "../utils/section-title";
 
 function Media() {
   const data = useContext(UserContext);
@@ -38,16 +39,8 @@ function Media() {
   return (
     <div className={`media`} id="media">
       <Container>
-        <Row>
-          <Col>
-            <div className="title">
-              <img src={Icon} className="header-icon" />
-              <span>Media</span>
-              <img src={Icon} className="header-icon" />
-            </div>
-          </Col>
-        </Row>
-
+      <SectionTitle title="Media" />
+        
         {items4.length ? <MediaBox4 items={items4} /> : null}
         {items3.length ? <MediaBox3 items={items3} /> : null}
         {rest.length ? <MediaBoxRest items={rest} /> : null}

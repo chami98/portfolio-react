@@ -4,22 +4,6 @@
   padding-top: 0px;
 }
 
-.projects .title {
-  margin: 0 auto;
-  color: #f9f2fc;
-  text-align: center;
-  font-family: Satoshi;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 21.92px; /* 91.333% */
-  text-transform: uppercase;
-}
-
-.projects .title img {
-  margin: 60px;
-  width: 16px;
-}
 
 .projects .sub-text-1 {
   color: #f9f2fc;

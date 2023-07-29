@@ -1,4 +1,4 @@
-import { useFirstVisible } from "./useFirstVisble";
+import { useFirstVisible } from "./use-first-visble";
 
 import './opacity-animated.css'
 

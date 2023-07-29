@@ -9,8 +9,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 67px;
+  /* gap: 67px; */
   margin-top: 95px;
+  margin-bottom: 25px;
 }
 
 .awards-title {
