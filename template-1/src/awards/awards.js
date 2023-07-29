@@ -57,7 +57,6 @@ const Awards = () => {
                     </div>
                 </div>
 
-
             </div>
         </>
     );
