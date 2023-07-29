@@ -7,7 +7,6 @@ import Icon from "./assests/connect-hand.png";
 export const Right = () => {
   const data = useContext(UserContext);
 
-  console.log(data)
   const userName = data?.user_info?.name;
   const about = data?.user_info?.about;
   return (

@@ -20,7 +20,15 @@ export const useUserData = () => {
       .then((response) => response.json())
       .then((response) => {
         if (response.result == true) {
-          setData(response.data);
+          const sections = {};
+
+          JSON.parse(response.data.sections).forEach((section) => {
+            sections[section.type] = section;
+          });
+          setData({
+            ...response.data,
+            sections,
+          });
           // setLoading(false);
         }
 

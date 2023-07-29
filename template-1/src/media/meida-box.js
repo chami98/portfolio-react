@@ -1,7 +1,18 @@
+import { useFirstVisible } from "../utils/useFirstVisble";
 
+export const MediaBox = ({ item: { src }, link, rows }) => {
+  const { isVisible, targetRef } = useFirstVisible();
 
-export const MediaBox = ({src, link}) => {
-   return <div className="media-box">
-        <img src={src} />
+  if (!src) return null;
+
+  return (
+    <div
+      ref={targetRef}
+      className={`media-box ${
+        isVisible ? "visible" : "not-visible"
+      } media-box-${rows}row`}
+    >
+      <img src={src} />
     </div>
-}
+  );
+};
