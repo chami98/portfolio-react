@@ -5,7 +5,7 @@ import { FixedHeader } from "./fixed-header/fixed-header";
 import { Header } from "./header/header";
 import Media from "./media";
 import Projects from "./projects";
-import { useUserData } from "./useUserData";
+import { useUserData } from "./utils/useUserData";
 import Awards from "./awards/awards";
 
 import Testimonials from "./testimonials/testimonials";

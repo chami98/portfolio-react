@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +12,8 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
 
  // JavaScript to handle smooth scrolling when clicking the links
  const links = document.querySelectorAll('a[href^="#"]');
