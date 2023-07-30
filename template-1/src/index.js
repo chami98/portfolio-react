@@ -12,6 +12,18 @@ root.render(
   </React.StrictMode>
 );
 
+ // JavaScript to handle smooth scrolling when clicking the links
+ const links = document.querySelectorAll('a[href^="#"]');
+ links.forEach(link => {
+     link.addEventListener('click', (event) => {
+         event.preventDefault();
+         const target = document.querySelector(link.getAttribute('href'));
+         if (target) {
+             target.scrollIntoView({ behavior: 'smooth' });
+         }
+     });
+ });
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

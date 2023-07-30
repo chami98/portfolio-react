@@ -1,16 +1,15 @@
 /* Awards section styles */
 .awards-section {
   background: #1f172c;
-  width: 100%;
-  height: 563px;
 }
 
 .awards-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 67px;
+  /* gap: 67px; */
   margin-top: 95px;
+  margin-bottom: 25px;
 }
 
 .awards-title {
@@ -27,11 +26,24 @@
   fill: #99b9ff;
 }
 
-.awards-text {
-  color: #f9f2fc;
-  text-align: center;
+.awards-body {
+  background: #1e1e1e;
+}
+
+.award-card-title {
+  color: #f7f7f7 !important;
   font-family: Satoshi;
-  font-size: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 88px; /* 550% */
+}
+
+.award-card-text {
+  color: #f9f2fc !important;
+  text-align: left;
+  font-family: Satoshi;
+  font-size: 16px;
   font-style: normal;
   font-weight: 900;
   line-height: 21.92px;
@@ -86,21 +98,14 @@
 }
 
 .award-card {
-  justify-content: center;
-  align-items: flex-start;
-  border-radius: 200px;
-  margin-right: 80px;
-}
-
-.award-card:last-child {
-  margin-right: 0px;
-  border-radius: 20px;
-}
-
-.award-card img {
-  width: 265px;
-  height: 332.555px;
-  flex-shrink: 0;
+  background: #1e1e1e;
+  color: white;
+  margin: 20px 10px;
+  border-radius: 20px !important;
+  overflow: hidden;
+  max-width: 20vw;
+  position: relative;
+  margin: 0 auto;
 }
 
 .award-info {
@@ -139,4 +144,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 88px;
+}
+
+.award-image {
 }

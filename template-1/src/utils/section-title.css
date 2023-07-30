@@ -1,0 +1,22 @@
+.section-title .title {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 21.92px; /* 91.333% */
+    text-transform: uppercase;
+
+    margin-top: 35px;
+  }
+
+  .section-title .white-text {
+    color: #f9f2fc;
+
+  }
+  
+  .section-title .title img {
+    margin: 60px;
+    width: 16px;
+  }
