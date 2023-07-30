@@ -6,8 +6,8 @@ export const ContactForm = () => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = () => {
-    console.log('handle submit here')
-  }
+    console.log("handle submit here");
+  };
 
   return (
     <Form onSubmit={(e) => e.preventDefault()}>
@@ -28,10 +28,18 @@ export const ContactForm = () => {
         controlId="exampleForm.ControlTextarea1"
       >
         <Form.Label>Example textarea</Form.Label>
-        <Form.Control as="textarea" rows={3}  value={message}
-          onChange={(e) => setMessage(e.target.value)}/>
+        <Form.Control
+          as="textarea"
+          rows={3}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
       </Form.Group>
-      <button variant="light" className="send-message-btn">
+      <button
+        variant="light"
+        className="send-message-btn"
+        onClick={handleSubmit}
+      >
         SEND MESSAGE
       </button>
     </Form>
