@@ -18,7 +18,7 @@ const Awards = () => {
 
   const itemLength = items?.length || 1;
 
-  let defaultCols = itemLength > 3 ? 0 : 12 / itemLength;
+  let preCols = itemLength === 2 ? 1 : 0;
 
   return (
     <>
@@ -26,9 +26,9 @@ const Awards = () => {
         <OpacityAnimated visibiltiy={0.9}>
           <div className="awards-container">
             <Container>
-              <SectionTitle title="Awards" white/>
+              <SectionTitle title="Awards" white />
             </Container>
-            
+
             <div className="awards-content">
               <p className="awards-heading">Designing Innovation,</p>
               <div className="awards-subheading">
@@ -44,13 +44,12 @@ const Awards = () => {
         <div className="awards-grid">
           <Container>
             <Row>
+              {[...Array(preCols)].map((_, i) => (
+                <Col md={3} key={i} />
+              ))}
+
               {items?.map(({ link, image, title, year, description }) => (
-                <Col
-                  xs={12}
-                  sm={defaultCols || 6}
-                  md={defaultCols || 4}
-                  key={link}
-                >
+                <Col xs={12} sm={6} md={3} key={link}>
                   <OpacityAnimated visibiltiy={0.6}>
                     <Card className="award-card">
                       <Card.Img
@@ -58,9 +57,11 @@ const Awards = () => {
                         variant="top"
                         src={image || Background}
                       />
-                      <Card.Body className="">
-                        <Card.Title>{`${title} ${year}`}</Card.Title>
-                        <Card.Text>{description}</Card.Text>
+                      <Card.Body className="awards-body">
+                        <Card.Title className="award-card-title">{`${title} ${year}`}</Card.Title>
+                        <Card.Text className="award-card-text">
+                          {description}
+                        </Card.Text>
                       </Card.Body>
                     </Card>
                   </OpacityAnimated>
