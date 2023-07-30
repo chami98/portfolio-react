@@ -5,7 +5,8 @@ import Card from "react-bootstrap/Card";
 import { UserContext } from "../App";
 
 import Background from "../assests/profile_background.svg";
-import { OpacityAnimated } from "../utils/OpacityAnimated";
+import { OpacityAnimated } from "../utils/opacity-animated";
+import { SectionTitle } from "../utils/section-title";
 
 const Awards = () => {
   const data = useContext(UserContext);
@@ -17,42 +18,17 @@ const Awards = () => {
 
   const itemLength = items?.length || 1;
 
-  let defaultCols = itemLength > 3 ? 0 : 12 / itemLength;
+  let preCols = itemLength === 2 ? 1 : 0;
 
   return (
     <>
       <div className="awards-section" id="awards">
         <OpacityAnimated visibiltiy={0.9}>
           <div className="awards-container">
-            <div className="awards-title">
-              <svg
-                className="awards-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M7.99992 0C8.78622 4.04828 11.9517 7.2137 16 7.99992C11.9517 8.78623 8.7863 11.9517 8.00008 16C7.21377 11.9517 4.04829 8.7863 0 8.00008C4.04827 7.21378 7.2137 4.04829 7.99992 0Z"
-                  fill="#99B9FF"
-                />
-              </svg>
-              <p className="awards-text">Awards</p>
-              <svg
-                className="awards-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M7.99992 0C8.78622 4.04828 11.9517 7.2137 16 7.99992C11.9517 8.78623 8.7863 11.9517 8.00008 16C7.21377 11.9517 4.04829 8.7863 0 8.00008C4.04827 7.21378 7.2137 4.04829 7.99992 0Z"
-                  fill="#99B9FF"
-                />
-              </svg>
-            </div>
+            <Container>
+              <SectionTitle title="Awards" white />
+            </Container>
+
             <div className="awards-content">
               <p className="awards-heading">Designing Innovation,</p>
               <div className="awards-subheading">
@@ -68,13 +44,12 @@ const Awards = () => {
         <div className="awards-grid">
           <Container>
             <Row>
+              {[...Array(preCols)].map((_, i) => (
+                <Col md={3} key={i} />
+              ))}
+
               {items?.map(({ link, image, title, year, description }) => (
-                <Col
-                  xs={12}
-                  sm={defaultCols || 6}
-                  md={defaultCols || 4}
-                  key={link}
-                >
+                <Col xs={12} sm={6} md={3} key={link}>
                   <OpacityAnimated visibiltiy={0.6}>
                     <Card className="award-card">
                       <Card.Img
@@ -82,9 +57,11 @@ const Awards = () => {
                         variant="top"
                         src={image || Background}
                       />
-                      <Card.Body className="">
-                        <Card.Title>{`${title} ${year}`}</Card.Title>
-                        <Card.Text>{description}</Card.Text>
+                      <Card.Body className="awards-body">
+                        <Card.Title className="award-card-title">{`${title} ${year}`}</Card.Title>
+                        <Card.Text className="award-card-text">
+                          {description}
+                        </Card.Text>
                       </Card.Body>
                     </Card>
                   </OpacityAnimated>

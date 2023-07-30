@@ -5,7 +5,7 @@ import Icon from './header-icon.svg'
 import './header.css'
 
 export const Header = () => {
-  return <Container className="header">
+  return <Container className="header" id="about">
     <Row>
       <Col xs={12}>
         <img src={Icon} className="header-icon" />

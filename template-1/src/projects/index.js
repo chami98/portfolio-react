@@ -6,6 +6,7 @@ import DownArrowIcon from "./down-arrow.svg";
 import { Col, Container, Row } from "react-bootstrap";
 import { ProjectCard } from "./project-card";
 import { UserContext } from "../App";
+import { SectionTitle } from "../utils/section-title";
 
 function Projects() {
   const data = useContext(UserContext);
@@ -18,15 +19,7 @@ function Projects() {
   return (
     <div className="projects" id="projects">
       <Container>
-        <Row>
-          <Col>
-            <div className="title">
-              <img src={Icon} className="header-icon" alt="header-icon"/>
-              <span>Projects</span>
-              <img src={Icon} className="header-icon" alt="header-icon"/>
-            </div>
-          </Col>
-        </Row>
+      <SectionTitle title="Projects" white/>
         <Row>
           <Col>
             <p className="sub-text-1">Pushing the best</p>

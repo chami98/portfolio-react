@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import Background from "../assests/profile_background.svg";
-import { OpacityAnimated } from "../utils/OpacityAnimated";
+import { OpacityAnimated } from "../utils/opacity-animated";
 
 export const ProjectCard = ({ preview, title, description }) => {
   return (
