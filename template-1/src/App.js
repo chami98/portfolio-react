@@ -7,7 +7,11 @@ import Media from "./media";
 import Projects from "./projects";
 import { useUserData } from "./useUserData";
 import Awards from "./awards/awards";
+
+import Testimonials from "./testimonials/testimonials";
+
 import { Experiance } from "./experiance/experiance";
+
 
 export const UserContext = createContext();
 
@@ -23,7 +27,7 @@ function App() {
       <Media />
       <Experiance />
       <Awards />
-
+      <Testimonials />
       <FixedHeader />
     </UserContext.Provider>
   );
