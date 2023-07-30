@@ -1,16 +1,23 @@
 .online-account-link {
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 15px;
-    width: 40px;
-    height: 40px;
-
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
 }
 
-.online-account-link:hover {
+@media (max-width: 767.98px) {
+  .online-account-link:hover {
     cursor: pointer;
-background: #eee;
+    background: #eee;
+  }
+
+  .online-account-link {
+    font-size: 24px;
+
+    padding: 5px;
+  }
 }

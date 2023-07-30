@@ -96,3 +96,38 @@
   line-height: 28.08px; /* 175.5% */
   text-transform: uppercase;
 }
+
+@media (max-width: 767.98px) {
+
+  .contact-section {
+    padding: 0;
+  }
+  .contact-me-container {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Catch-me-on-Social-Network-Text {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .account-links {
+    margin-bottom: 40px;
+  }
+
+  
+
+  .contact-form-wrapper {
+    padding-bottom: 200px;
+  }
+
+  .contact-me-container-text-1,
+  .contact-me-container-text-2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

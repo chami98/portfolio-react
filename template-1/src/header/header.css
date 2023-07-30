@@ -45,3 +45,9 @@
   line-height: 100px; /* 175.5% */
   text-transform: uppercase;
 }
+
+@media (max-width: 767.98px) {
+  .header-nav {
+    display: none;
+  }
+}

@@ -11,8 +11,6 @@ export const ContactLeft = () => {
 
   const onlineAccounts = data?.onlineAccounts?.connected_accounts;
 
-  console.log("onlineAccounts", onlineAccounts);
-
   return (
     <OpacityAnimated>
       <Container>

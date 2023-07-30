@@ -9,7 +9,7 @@ export const OnlineAccountLink = ({
       target="_blank"
       className="online-account-link"
     >
-      <i class={`fab fa-${account}`}></i>
+      <i className={`fab fa-${account}`}></i>
     </a>
   );
 };

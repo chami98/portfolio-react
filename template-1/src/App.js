@@ -12,6 +12,7 @@ import Testimonials from "./testimonials/testimonials";
 
 import { Experiance } from "./experiance/experiance";
 import { Contact } from "./contact/contact";
+import { FixedHeaderMobile } from "./fixed-header/fixed-header-mobile";
 
 
 export const UserContext = createContext();
@@ -31,6 +32,7 @@ function App() {
       <Testimonials />
       <Contact />
       <FixedHeader />
+      <FixedHeaderMobile />
     </UserContext.Provider>
   );
 }

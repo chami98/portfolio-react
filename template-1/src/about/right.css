@@ -73,12 +73,11 @@
   opacity: 0.9;
 
   text-decoration: none !important;
-  
 }
 
 .right .connnect-button:hover {
-opacity: 1;
-background: white;
+  opacity: 1;
+  background: white;
 }
 
 .right .connnect-button .connect-icon {
@@ -98,5 +97,64 @@ background: white;
   margin: 0;
   margin-left: 20px;
   text-decoration: none !important;
+}
 
+
+@media (max-width: 767.98px) {
+  .right {
+    margin-top: 60px;
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+
+  .right .title{
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  .right .sub-title-1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  .right .sub-title-2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  .right .name {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 10px 0px;
+  }
+
+  .right .connnect-button {
+    margin: 0 auto;
+    padding: 10px 18px;
+    margin-top: 40px;
+  }
+
+  .right .connnect-button .text {
+    color: #1f172c;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+    margin: 0;
+    margin-left: 8px;
+    text-decoration: none !important;
+  }
+
+  .right .connnect-button .connect-icon {
+    height: 20px;
+  }
 }

@@ -17,11 +17,11 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials-section" id="testimonials">
-      <SectionTitle title="Testimovials" white />
+      <SectionTitle title="Testimonials" white />
       <Container className="testimonials-container">
         <Row>
           {items?.map(({ name, testimonial, title, avatar }, i) => (
-            <Col xs={12} sm={6} md={4} key={testimonial}>
+            <Col xs={12} md={4} key={testimonial}>
               <OpacityAnimated
                 visibiltiy={0.2 * (i + 1) > 1 ? 1 : 0.2 * (i + 1)}
               >
