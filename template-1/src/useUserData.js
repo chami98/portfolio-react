@@ -11,6 +11,8 @@ export const useUserData = () => {
   const id = testing ? test_user_id : url.substring(url.lastIndexOf("/") + 1);
 
   useEffect(() => {
+    if (!id) return;
+
     fetch("https://efolio-portfolio.web.app/api/v1/getPortfolio/" + id, {
       method: "GET",
       headers: {
@@ -19,15 +21,22 @@ export const useUserData = () => {
     })
       .then((response) => response.json())
       .then((response) => {
-        if (response.result == true) {
-          setData(response.data);
-          // setLoading(false);
+        if (response.result === true) {
+          const sections = {};
+
+          JSON.parse(response.data.sections).forEach((section) => {
+            sections[section.type] = section;
+          });
+          setData({
+            ...response.data,
+            sections,
+          });
         }
 
         return response;
       })
       .finally(() => setLoading(false));
-  }, []);
+  }, [id]);
 
   return {
     data,

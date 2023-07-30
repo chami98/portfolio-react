@@ -7,7 +7,13 @@
 
 .fixed-header {
   width: fit-content;
+  height: fit-content;
   margin: 0 auto;
+  background: #1f172c1f;
+
+  padding: 25px 10px;
+  border-radius: 35px;
+
 }
 
 .fixed-header a {
@@ -44,6 +50,7 @@
 .fixed-header a:active {
   border: 2px solid #f9f2fc;
   background: #2a1d3f;
+  color: white;
 }
 
 .fixed-header ul {

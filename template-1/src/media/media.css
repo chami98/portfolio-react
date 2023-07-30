@@ -3,14 +3,24 @@
   padding-top: 0px;
 }
 
+.media .visible {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.media .not-visible {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
 .media .title {
-  margin: 0 auto;
-  color: #1f172c;
+  /* margin: 0 auto; */
+  /* color: #1f172c;
   text-align: center;
   font-family: Satoshi;
   font-size: 24px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 900; */
   line-height: 21.92px; /* 91.333% */
   text-transform: uppercase;
 }
@@ -27,8 +37,17 @@
 }
 
 .media-box img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+
+.media-box-2row {
+    height: calc(80vh + 30px);
+}
+
+.media-box-1row {
+    height: calc(40vh);
 }

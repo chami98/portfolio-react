@@ -9,7 +9,7 @@ import { Right } from "./right";
 
 function About() {
   return (
-    <Container className="about-section" style={{marginTop: '050px'}}>
+    <Container className="about-section" >
       <Row>
         <Col xs={12} md={4} style={{ position: "relative" }}>
           <Left />
