@@ -40,37 +40,33 @@ const Awards = () => {
         </OpacityAnimated>
       </div>
 
-      <div className="awards-showcase">
-        <div className="awards-grid">
-          <Container>
-            <Row>
-              {[...Array(preCols)].map((_, i) => (
-                <Col md={3} key={i} />
-              ))}
+      <Container>
+        <Row>
+          {[...Array(preCols)].map((_, i) => (
+            <Col md={3} key={i} />
+          ))}
 
-              {items?.map(({ link, image, title, year, description }) => (
-                <Col xs={12} sm={6} md={3} key={link}>
-                  <OpacityAnimated visibiltiy={0.6}>
-                    <Card className="award-card">
-                      <Card.Img
-                        className="award-image"
-                        variant="top"
-                        src={image || Background}
-                      />
-                      <Card.Body className="awards-body">
-                        <Card.Title className="award-card-title">{`${title} ${year}`}</Card.Title>
-                        <Card.Text className="award-card-text">
-                          {description}
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </OpacityAnimated>
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </div>
-      </div>
+          {items?.map(({ link, image, title, year, description }) => (
+            <Col xs={12} md={3} key={link}>
+              <OpacityAnimated visibiltiy={0.6}>
+                <Card className="award-card">
+                  <Card.Img
+                    className="award-image"
+                    variant="top"
+                    src={image || Background}
+                  />
+                  <Card.Body className="awards-body">
+                    <Card.Title className="award-card-title">{`${title} ${year}`}</Card.Title>
+                    <Card.Text className="award-card-text">
+                      {description}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </OpacityAnimated>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
   );
 };

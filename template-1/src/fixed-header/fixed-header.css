@@ -56,3 +56,10 @@
 .fixed-header ul {
   list-style: none;
 }
+
+@media (max-width: 767.98px) {
+  .fixed-header {
+    display: none;
+  }
+
+}
