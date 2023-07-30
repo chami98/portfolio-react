@@ -29,7 +29,7 @@ function Projects() {
 
         <Row>
           {items?.map((p) => (
-            <Col md={4} xs={12} lg={4}>
+            <Col md={4} xs={12} lg={4} key={p.src}>
               <ProjectCard {...p} />
             </Col>
           ))}
