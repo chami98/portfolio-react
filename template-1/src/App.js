@@ -11,6 +11,7 @@ import Awards from "./awards/awards";
 import Testimonials from "./testimonials/testimonials";
 
 import { Experiance } from "./experiance/experiance";
+import { Contact } from "./contact/contact";
 
 
 export const UserContext = createContext();
@@ -28,6 +29,7 @@ function App() {
       <Experiance />
       <Awards />
       <Testimonials />
+      <Contact />
       <FixedHeader />
     </UserContext.Provider>
   );

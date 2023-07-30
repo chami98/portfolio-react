@@ -55,6 +55,7 @@
   flex-direction: column;
   align-items: center;
   gap: 9px;
+  margin-bottom: 50px;;
 }
 
 .awards-heading {
