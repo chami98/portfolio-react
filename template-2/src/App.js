@@ -12,6 +12,7 @@ import { useUserData } from "./utils/useUserData";
 import './App.css';
 import Awards from "./awards/awards";
 import { Contact } from "./contact/contact";
+import { FixedHeaderMobile } from "./fixed-header/fixed-header-mobile";
 
 
 export const UserContext = createContext();
@@ -31,7 +32,7 @@ function App() {
       <Testimonials />
       <Contact />
       {/* <FixedHeader /> */}
-      {/* <FixedHeaderMobile /> */}
+      <FixedHeaderMobile />
     </UserContext.Provider>
   );
 }

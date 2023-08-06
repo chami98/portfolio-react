@@ -206,6 +206,11 @@ body {
 }
 
 @media (max-width: 767.98px) {
+
+  .timeline {
+    left: 0px;
+  }
+
   .timeline::after {
     left: 90px;
   }
@@ -222,7 +227,7 @@ body {
 
   .experiance-container.experiance-container-left::after,
   .experiance-container.experiance-container-right::after {
-    left: 82px;
+    left: 68px;
   }
 
   .experiance-container.current::after {

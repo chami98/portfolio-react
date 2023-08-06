@@ -60,4 +60,7 @@
 
 
 @media (max-width: 767.98px) {
+  .about-section {
+    padding-top: 50px;
+  }
 }
