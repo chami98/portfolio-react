@@ -1,5 +1,6 @@
 {
   "name": "template-2",
+  "homepage": "/template-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
