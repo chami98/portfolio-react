@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+  left: 100px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #F9F2FC;
+  top: 0;
+  bottom: 70px;
+  left: 16px;
+  margin-left: -1px;
+}
+
+.experiance-container,
+.experiance-container-single {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.experiance-container.experiance-container-left,
+.experiance-container-single.experiance-container-left {
+  left: 0;
+}
+
+.experiance-container.experiance-container-right,
+.experiance-container-single.experiance-container-right {
+  /* left: 50%; */
+}
+
+.experiance-container::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #1f172c;
+  border-radius: 16px;
+  z-index: 1;
+
+  width: 48px;
+  height: 48px;
+
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background: #8d43ce;
+}
+
+.experiance-container.experiance-container-right::after {
+  left: -8px;
+}
+
+.experiance-container::before {
+  /* content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 0px;
+  background: #1f172c;
+  z-index: 1; */
+}
+
+.experiance-container.experiance-container-right::before {
+  left: 8px;
+}
+
+.experiance-container.experiance-container-right.dummy::before {
+  display: none;
+}
+
+.experiance-container .date,
+.experiance-container-single .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f172c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+
+  color: #1f172c;
+  font-family: Satoshi;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 21.92px; /* 146.133% */
+  text-transform: uppercase;
+}
+
+.experiance-container.experiance-container-left .date {
+  right: -105px;
+}
+
+.experiance-container.experiance-container-right .date {
+  left: -105px;
+}
+
+.experiance-container.experiance-container-right.dummy .date {
+  left: -60px;
+}
+
+.experiance-container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #f6d155;
+  border: 2px solid #1f172c;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #1f172c;
+  z-index: 1;
+}
+
+.experiance-container.experiance-container-left .icon {
+  right: 56px;
+}
+
+.experiance-container.experiance-container-right .icon {
+  left: 56px;
+}
+
+.experiance-container .content {
+  padding: 20px 90px 20px 30px;
+  position: relative;
+  /* border-radius: 0 500px 500px 0; */
+  border-radius: 20px;
+
+  border-radius: 20px;
+  /* background: #1f172c; */
+}
+
+.experiance-container .content .title {
+  color: #f9f2fc;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
+
+.experiance-container .content p {
+  color: #f9f2fc;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.experiance-container.experiance-container-right .content {
+  padding: 20px 90px 20px 30px;
+  /* border-radius: 10px; */
+}
+
+.experiance-container .content h2 {
+  margin: 0 0 10px 0;
+
+  color: #f9f2fc;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 21.92px; /* 137% */
+}
+
+.experiance-container .content p {
+  margin: 0;
+
+  color: #f9f2fc;
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.92px; /* 156.571% */
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .experiance-container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .experiance-container.experiance-container-right {
+    left: 0%;
+  }
+
+  .experiance-container.experiance-container-left::after,
+  .experiance-container.experiance-container-right::after {
+    left: 82px;
+  }
+
+  .experiance-container.current::after {
+    /* left: 87px; */
+  }
+
+  .experiance-container.experiance-container-left::before,
+  .experiance-container.experiance-container-right::before {
+    left: 89px;
+    border-color: transparent #1f172c transparent transparent;
+  }
+
+  .experiance-container.experiance-container-left .date,
+  .experiance-container.experiance-container-right .date {
+    right: auto;
+    left: 25px;
+    bottom: 10px;
+    top: 20px;
+    font-size: 11px;
+  }
+
+  .experiance-container.experiance-container-left .icon,
+  .experiance-container.experiance-container-right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .experiance-container.experiance-container-left .content,
+  .experiance-container.experiance-container-right .content {
+    padding: 10px;
+    border-radius: 10px;
+  }
+}

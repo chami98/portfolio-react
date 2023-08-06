@@ -1,0 +1,136 @@
+.contact-section {
+  /* padding: 100px 50px; */
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  margin: 90px;
+  padding: 90px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.contact-me-container-text-1 {
+  color: #1f172c;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66.08px; /* 118% */
+}
+
+.contact-me-container-text-2 {
+  text-align: center;
+  font-family: Zodiak;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px; /* 118% */
+  background: linear-gradient(180deg, #f15c22 0%, #a794ea 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 60px;
+}
+
+.shape-image {
+  object-fit: cover; /* Maintain the image aspect ratio while covering the container */
+  float: right;
+  border-radius: 50%;
+  width: 250px !important;
+  margin: 0 auto;
+}
+
+.Catch-me-on-Social-Network-Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Catch-me-on-Social-Network-Text {
+  color: #1f172c;
+  font-family: Satoshi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66.08px; /* 183.556% */
+  text-align: center;
+}
+
+.account-links {
+  width: fit-content !important;
+  margin: 0 auto;
+}
+
+.contact-input input,
+.contact-input textarea {
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.contact-input input:active,
+.contact-input textarea:active,
+.contact-input input:focus,
+.contact-input textarea:focus {
+  background: #f9f9f9;
+}
+
+.send-message-btn {
+  border-radius: 8px;
+  border: 1px solid #8d43ce;
+  background: #8d43ce;
+
+  padding: 10px 20px;
+
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.contact-form-wrapper {
+  background: white;
+  padding: 50px 40px !important;
+
+  border-radius: 10px;
+  max-width: 900px !important;
+  margin: 0 auto;
+  margin-top: 50px !important;
+}
+
+@media (max-width: 767.98px) {
+  .contact-section {
+    padding: 0;
+  }
+  .contact-me-container {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Catch-me-on-Social-Network-Text {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .account-links {
+    margin-bottom: 40px;
+  }
+
+  .contact-form-wrapper {
+    padding-bottom: 200px;
+  }
+
+  .contact-me-container-text-1,
+  .contact-me-container-text-2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
