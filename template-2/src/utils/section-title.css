@@ -1,0 +1,20 @@
+.section-title .title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67.2px; /* 120% */
+}
+
+.section-title .sub-title {
+  color: #8d43ce;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67.2px; /* 186.667% */
+}
+
+@media (max-width: 767.98px) {
+}
