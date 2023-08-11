@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": "hosting",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ {
+      "source": "/pietwo{,/**}",
+      "destination": "/pietwo/index.html"
+    },
+    {
+      "source": "/newpie{,/**}",
+      "destination": "/newpie/index.html"
+    }
+  ]
+  }
+}

@@ -35,6 +35,7 @@
   /* display: flex; */
   gap: 20px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .testimonials-card {
@@ -50,6 +51,7 @@
   border-radius: 20px;
   border: 1px solid #f9f2fc;
   background: #1f172c;
+  margin-top: 20px;
 }
 
 .testimonials-card-text {
@@ -78,7 +80,6 @@
   font-weight: 700;
   line-height: 27.92px;
   margin-bottom: 0;
-  text-transform: lowercase;
 }
 
 /* testimonials.css */

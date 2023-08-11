@@ -8,6 +8,7 @@ export const FixedHeader = () => {
         <a href="#projects">Projects</a>
         <a href="#media">Media</a>
         <a href="#experiance">Experience</a>
+        <a href="#education">Education</a>
         <a href="#awards">Awards</a>
         <a href="#testimonials">Testimonials</a>
       </div>

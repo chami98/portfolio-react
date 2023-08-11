@@ -15,7 +15,7 @@ function About() {
           <Left />
         </Col>
         <Col xs={12} md={4}>
-          <Right/>
+          <Right />
         </Col>
       </Row>
     </Container>

@@ -32,7 +32,7 @@
 
 .award-card-title {
   color: #f7f7f7 !important;
-  font-family: Satoshi;
+  /* font-family: Satoshi; */
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
@@ -42,12 +42,28 @@
 .award-card-text {
   color: #f9f2fc !important;
   text-align: left;
-  font-family: Satoshi;
+  /* font-family: Satoshi; */
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
   line-height: 21.92px;
   text-transform: uppercase;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  height: 35px;
+
+  @supports (-webkit-line-clamp: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 45px;
+  }
 }
 
 .awards-content {
@@ -55,13 +71,13 @@
   flex-direction: column;
   align-items: center;
   gap: 9px;
-  margin-bottom: 50px;;
+  margin-bottom: 50px;
 }
 
 .awards-heading {
   color: #f9f2fc;
   text-align: center;
-  font-family: Satoshi;
+  /* font-family: Satoshi; */
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
@@ -72,7 +88,7 @@
 .awards-subheading {
   color: #f9f2fc;
   text-align: center;
-  font-family: Satoshi;
+  /* font-family: Satoshi; */
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
@@ -88,7 +104,8 @@
 .awards-showcase {
   background: #f9f2fc;
   width: 100%;
-  height: 563px;
+  margin-bottom: 72px;
+  height: fit-content;
 }
 
 .awards-grid {
@@ -96,6 +113,7 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 72px;
+  margin-bottom: 72px;
 }
 
 .award-card {
@@ -107,6 +125,7 @@
   max-width: 20vw;
   position: relative;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .award-info {
@@ -126,7 +145,7 @@
   flex-direction: column;
   justify-content: center;
   color: #f7f7f7;
-  font-family: Satoshi;
+  /* font-family: Satoshi; */
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
@@ -140,7 +159,7 @@
   flex-direction: column;
   justify-content: center;
   color: #f7f7f7;
-  font-family: Satoshi;
+  /* font-family: Satoshi; */
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -150,14 +169,14 @@
 .award-image {
 }
 
-
 @media (max-width: 767.98px) {
   .award-card {
     max-width: 80%;
     margin-bottom: 40px;
   }
 
-  .awards-heading, .awards-subheading {
+  .awards-heading,
+  .awards-subheading {
     font-size: 32px;
     line-height: 40px;
     margin: 0;
@@ -170,6 +189,5 @@
 
   .award-card-text {
     font-size: 14px !important;
-
   }
 }

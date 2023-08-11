@@ -40,14 +40,14 @@ const Awards = () => {
         </OpacityAnimated>
       </div>
 
-      <Container>
+      <Container className="awards-showcase">
         <Row>
           {[...Array(preCols)].map((_, i) => (
             <Col md={3} key={i} />
           ))}
 
-          {items?.map(({ link, image, title, year, description }) => (
-            <Col xs={12} md={3} key={link}>
+          {items?.map(({ link, image, title, year, description }, i) => (
+            <Col xs={12} md={3} key={i}>
               <OpacityAnimated visibiltiy={0.6}>
                 <Card className="award-card">
                   <Card.Img
