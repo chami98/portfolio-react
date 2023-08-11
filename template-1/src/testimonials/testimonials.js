@@ -21,7 +21,7 @@ const Testimonials = () => {
       <Container className="testimonials-container">
         <Row>
           {items?.map(({ name, testimonial, title, avatar }, i) => (
-            <Col xs={12} md={4} key={testimonial}>
+            <Col xs={12} md={4} key={i}>
               <OpacityAnimated
                 visibiltiy={0.2 * (i + 1) > 1 ? 1 : 0.2 * (i + 1)}
               >

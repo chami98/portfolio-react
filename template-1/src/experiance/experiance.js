@@ -11,7 +11,7 @@ export const Experiance = () => {
   return (
     <div>
       <Container className="experiance-section" id="experiance">
-        <SectionTitle title="Experiance" />
+        <SectionTitle title="Experience" />
         <Row>
           <Col>
             <p className="sub-text-1">Pushing the best</p>

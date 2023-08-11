@@ -18,6 +18,7 @@ function Projects() {
   return (
     <div className="projects" id="projects">
       <Container>
+      <Spacer />
         <SectionTitle
           title="Projects"
           subTitle="Innovating Connected Experiences"

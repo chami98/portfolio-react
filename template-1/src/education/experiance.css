@@ -1,0 +1,49 @@
+.experiance-section .sub-text-1 {
+  /* color: #f9f2fc; */
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 50px; /* 137.5% */
+  letter-spacing: -0.8px;
+}
+
+.experiance-section .center {
+  text-align: center;
+}
+
+.experiance-section .margin-md {
+  margin-top: 25px;
+}
+
+.experiance-section .sub-text-2 {
+  text-align: center;
+  font-family: Zodiak;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 70px; /* 137.5% */
+  letter-spacing: -3.2px;
+
+  background: linear-gradient(172deg, #fd5200 0%, #99dfff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .experiance-section .sub-text-1,
+  .experiance-section .sub-text-2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .experiance-section .margin-md {
+    margin-top: 0;
+  }
+}

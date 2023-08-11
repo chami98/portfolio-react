@@ -10,6 +10,8 @@
 
 # production
 /build
+/newpie
+/newpie.zip
 
 # misc
 .DS_Store

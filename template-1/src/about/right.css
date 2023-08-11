@@ -11,6 +11,7 @@
 
 .right {
   margin-left: 80px;
+  min-height: 100vh;
 }
 
 .right .sub-title-1 {

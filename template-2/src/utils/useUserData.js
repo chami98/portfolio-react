@@ -5,7 +5,8 @@ export const useUserData = () => {
   const [loading, setLoading] = useState(true);
 
   const test_user_id = "o0jzTAnkiUh952RFiT9IUQnJnKt2";
-  const testing = true;
+  // only run testing version on devepment
+  const testing = process.env.NODE_ENV === "development";
 
   const url = window.location.pathname;
   const id = testing ? test_user_id : url.substring(url.lastIndexOf("/") + 1);
@@ -24,13 +25,20 @@ export const useUserData = () => {
         if (response.result === true) {
           const sections = {};
 
+          const sectionOrder = []
           JSON.parse(response.data.sections).forEach((section) => {
             sections[section.type] = section;
+            sectionOrder.push(section.type)
           });
           setData({
             ...response.data,
             sections,
+            sectionOrder
           });
+
+          const userName = response.data?.user_info?.name;
+
+          document.title = userName;
         }
 
         return response;
