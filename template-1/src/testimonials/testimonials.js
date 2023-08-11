@@ -11,8 +11,6 @@ import { OpacityAnimated } from "../utils/opacity-animated";
 const Testimonials = () => {
   const data = useContext(UserContext);
 
-  const imagePath = data?.user_info?.profile_picture;
-
   const items = data?.sections?.testimonial_section?.data;
 
   return (

@@ -15,6 +15,7 @@ import { Contact } from "./contact/contact";
 import { FixedHeaderMobile } from "./fixed-header/fixed-header-mobile";
 import { Loader } from "./utils/loader";
 import { Education } from "./education/education";
+import { useInsertLink } from "./utils/use-insert-link";
 
 export const UserContext = createContext();
 
@@ -27,9 +28,8 @@ const SectionToCom = {
   awards_section: <Awards />,
 };
 function App() {
+  useInsertLink("platform");
 
-
- 
   const { data, loading } = useUserData();
 
   console.log(data);

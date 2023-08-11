@@ -16,7 +16,9 @@ export const ContactForm = () => {
   const unique_user_id = data?.user_info?.id;
 
   const handleSubmit = async () => {
+
     const res = await sendMailNow(firstName, email, message, userEmailId);
+
     if (res) {
       setEmail("");
       setFirstName("");

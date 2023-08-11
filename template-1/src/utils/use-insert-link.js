@@ -5,7 +5,7 @@ export const useInsertLink = (link) => {
     const isDev = process.env.NODE_ENV === "development";
 
     const prefix = isDev ? "https://efolio-portfolio.web.app" : "../";
-    const href = `${prefix}/publicjs${link}`;
+    const href = `${prefix}/publicjs/${link}.js`;
     const scriptTag = document.createElement("script");
     scriptTag.src = href;
 

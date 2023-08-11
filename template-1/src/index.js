@@ -6,10 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-process.env.NODE_ENV === "development" &&
-  import("https://efolio-portfolio.web.app/publicjs/platform.js");
-
-process.env.NODE_ENV !== "development" && import("../publicjs/platform.js");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
