@@ -3,7 +3,7 @@ import { SectionTitle } from "../utils/section-title";
 
 import "./experiance.css";
 import { ExperianceGraph } from "./experiance-graph";
-import { Spacer } from "../utils/section-title copy";
+import { Spacer } from "../utils/spacer";
 
 const Experiance = () => {
   return (

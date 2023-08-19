@@ -7,7 +7,7 @@ import { UserContext } from "../App";
 import Background from "../assests/profile_background.svg";
 import { OpacityAnimated } from "../utils/opacity-animated";
 import { SectionTitle } from "../utils/section-title";
-import { Spacer } from "../utils/section-title copy";
+import { Spacer } from "../utils/spacer";
 
 const Awards = () => {
   const data = useContext(UserContext);

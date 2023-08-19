@@ -25,7 +25,7 @@ export const Education = () => {
   return (
     <div>
       <Container className="experiance-section" id="education">
-        <SectionTitle title="Education" />
+        <SectionTitle title="Education" section="education_sec" />
         <Row>
           <Col>
             {/* <p className="sub-text-1">Pushing the best</p>

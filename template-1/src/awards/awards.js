@@ -26,16 +26,16 @@ const Awards = () => {
         <OpacityAnimated visibiltiy={0.9}>
           <div className="awards-container">
             <Container>
-              <SectionTitle title="Awards" white />
+              <SectionTitle title="Awards" white section="awards_section" />
             </Container>
 
-            <div className="awards-content">
+            {/* <div className="awards-content">
               <p className="awards-heading">Designing Innovation,</p>
               <div className="awards-subheading">
                 <p className="award-shaping">Shaping</p>
                 <p className="award-the-future">the Future</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </OpacityAnimated>
       </div>

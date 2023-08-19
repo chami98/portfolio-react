@@ -11,13 +11,11 @@ import { OpacityAnimated } from "../utils/opacity-animated";
 const Testimonials = () => {
   const data = useContext(UserContext);
 
-  const imagePath = data?.user_info?.profile_picture;
-
   const items = data?.sections?.testimonial_section?.data;
 
   return (
     <div className="testimonials-section" id="testimonials">
-      <SectionTitle title="Testimonials" white />
+      <SectionTitle title="Testimonials" white section="testimonial_section" />
       <Container className="testimonials-container">
         <Row>
           {items?.map(({ name, testimonial, title, avatar }, i) => (

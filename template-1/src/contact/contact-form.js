@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { sendMailNow } from "../utils/sendMailNow";
 import { UserContext } from "../App";
-import { doAnalytics } from "../testimonials/viewInfo";
+import { doAnalytics } from "../viewInfo";
 // import { doAnalytics } from "../utils/doAnalytics";
 
 export const ContactForm = () => {
@@ -16,7 +16,9 @@ export const ContactForm = () => {
   const unique_user_id = data?.user_info?.id;
 
   const handleSubmit = async () => {
+
     const res = await sendMailNow(firstName, email, message, userEmailId);
+
     if (res) {
       setEmail("");
       setFirstName("");

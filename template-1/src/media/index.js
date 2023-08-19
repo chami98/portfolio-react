@@ -39,7 +39,7 @@ function Media() {
   return (
     <div className={`media`} id="media">
       <Container>
-        <SectionTitle title="Media" />
+        <SectionTitle title="Media" section="media_sec" />
 
         {items4.length ? <MediaBox4 items={items4} /> : null}
         {items3.length ? <MediaBox3 items={items3} /> : null}

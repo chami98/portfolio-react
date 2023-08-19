@@ -5,7 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ProjectCard } from "./project-card";
 import { UserContext } from "../App";
 import { SectionTitle } from "../utils/section-title";
-import { Spacer } from "../utils/section-title copy";
+import { Spacer } from "../utils/spacer";
 
 function Projects() {
   const data = useContext(UserContext);

@@ -1,9 +1,16 @@
 import "./contact.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { ContactLeft } from "./contact-left";
-import {ContactForm} from "./contact-form"
+import { ContactForm } from "./contact-form";
+import { UserContext } from "../App";
+import { useContext } from "react";
+import { ContactItem } from "./contact-item";
 
 export const Contact = () => {
+  const data = useContext(UserContext);
+
+  const contact_info = data?.contact_info;
+
   return (
     <div className="contact-section" id="contact">
       <div className="contact-me-container">
@@ -23,6 +30,13 @@ export const Contact = () => {
             <Col xs={12} md={6}>
               <ContactForm />
             </Col>
+          </Row>
+          <Row>
+            {contact_info?.map((c, i) => (
+              <Col xs={12} md={6} key={i}>
+                <ContactItem {...c} />
+              </Col>
+            ))}
           </Row>
         </Container>
       </div>

@@ -8,7 +8,7 @@ import { MediaBox3 } from "./media-box-3";
 import { UserContext } from "../App";
 import { MediaBoxRest } from "./media-box-rest";
 import { SectionTitle } from "../utils/section-title";
-import { Spacer } from "../utils/section-title copy";
+import { Spacer } from "../utils/spacer";
 
 function Media() {
   const data = useContext(UserContext);

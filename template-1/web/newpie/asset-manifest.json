@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/newpie/static/css/main.9279718a.css",
+    "main.js": "/newpie/static/js/main.197e1959.js",
+    "static/js/787.3bfec8cd.chunk.js": "/newpie/static/js/787.3bfec8cd.chunk.js",
+    "static/media/fa-solid-900.ttf": "/newpie/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/newpie/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/newpie/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/newpie/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/Vector.png": "/newpie/static/media/Vector.464be784c6565851a49c.png",
+    "static/media/fa-regular-400.ttf": "/newpie/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/avatar_profile.png": "/newpie/static/media/avatar_profile.cb85409ef161791a02e8.png",
+    "static/media/efolio_logo.png": "/newpie/static/media/efolio_logo.991ce54e71aa39cfa8e1.png",
+    "static/media/fa-regular-400.woff2": "/newpie/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/newpie/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/newpie/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "static/media/profile_background.svg": "/newpie/static/media/profile_background.ce3e3cb9061e12bd7c52975e715c2a90.svg",
+    "index.html": "/newpie/index.html",
+    "static/media/down-arrow.svg": "/newpie/static/media/down-arrow.d45ba1bfa45b05ba895dd7e83d5eb508.svg",
+    "main.9279718a.css.map": "/newpie/static/css/main.9279718a.css.map",
+    "main.197e1959.js.map": "/newpie/static/js/main.197e1959.js.map",
+    "787.3bfec8cd.chunk.js.map": "/newpie/static/js/787.3bfec8cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9279718a.css",
+    "static/js/main.197e1959.js"
+  ]
+}

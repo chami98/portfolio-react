@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../App";
-import { handleLinkClick } from "../testimonials/viewInfo";
+import { handleLinkClick } from "../viewInfo";
 import "./online-account-link.css";
 
 export const OnlineAccountLink = ({ account, url }) => {

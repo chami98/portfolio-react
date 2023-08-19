@@ -7,7 +7,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import AvatarDefault from "../assests/avatar_profile.png";
 import { OpacityAnimated } from "../utils/opacity-animated";
-import { Spacer } from "../utils/section-title copy";
+import { Spacer } from "../utils/spacer";
 
 const Testimonials = () => {
   const data = useContext(UserContext);
