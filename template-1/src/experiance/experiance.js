@@ -10,9 +10,9 @@ export const Experiance = () => {
  
   return (
     <div>
-      <Container className="experiance-section" id="experiance">
-        <SectionTitle title="Experience" />
-        <Row>
+      <Container className="experiance-section" id="experiance" >
+        <SectionTitle title="Experience" section="experience_section" />
+        {/* <Row>
           <Col>
             <p className="sub-text-1">Pushing the best</p>
             <p className="center margin-md">
@@ -20,7 +20,7 @@ export const Experiance = () => {
               <span className="sub-text-1">Comes</span>
             </p>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
       <ExperianceGraph />
     </div>

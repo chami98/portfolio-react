@@ -5,12 +5,12 @@ const testing = process.env.NODE_ENV === "development";
 export function handleLinkClick(userId, link) {
   if (testing) {
     console.log("Not saving stuff, opening link...");
-    console.log(link.href);
+    console.log(link);
     return true;
   }
 
   try {
-    doAnalytics(userId, "link_redirect", link.href)
+    doAnalytics(userId, "link_redirect", link)
       .then((data) => {
         //window.location.href = link.href;
         //console.log("Analytics done, redirect"); // Do something with the data
@@ -40,17 +40,17 @@ export function getDefaultDescForSection(type, defaultValue) {
     return defaultValue;
   }
 
-  if (type == "project_section") {
+  if (type === "project_section") {
     return "I have worked on variety of projects.";
-  } else if (type == "testimonial_section") {
+  } else if (type === "testimonial_section") {
     return "What people are saying about me.";
-  } else if (type == "media_sec") {
+  } else if (type === "media_sec") {
     return "Some of my works.";
-  } else if (type == "experience_section") {
+  } else if (type === "experience_section") {
     return "Having experience that can help you.";
-  } else if (type == "education_sec") {
+  } else if (type === "education_sec") {
     return "Had a great learning experience.";
-  } else if (type == "awards_section") {
+  } else if (type === "awards_section") {
     return "Awards I’ve reached during my education & working times.";
   }
 
@@ -68,6 +68,7 @@ export function getMachineId() {
   return machineId;
 }
 
+
 export function doAnalytics(userId, type, extraData) {
   if (testing) {
     return true;
@@ -76,7 +77,7 @@ export function doAnalytics(userId, type, extraData) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   //console.log("Params "+urlParams)
-  if (urlParams.get("preview") == 1) {
+  if (urlParams.get("preview") === 1) {
     console.log("This is a preview page, so ignoring some stuff");
     return true;
   }

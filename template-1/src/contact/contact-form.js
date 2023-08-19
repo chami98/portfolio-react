@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { sendMailNow } from "../utils/sendMailNow";
 import { UserContext } from "../App";
-import { doAnalytics } from "../testimonials/viewInfo";
+import { doAnalytics } from "../viewInfo";
 // import { doAnalytics } from "../utils/doAnalytics";
 
 export const ContactForm = () => {

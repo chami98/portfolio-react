@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ContactLeft } from "./contact-left";
 import { ContactForm } from "./contact-form";
 import { SectionTitle } from "../utils/section-title";
-import { Spacer } from "../utils/section-title copy";
+import { Spacer } from "../utils/spacer";
 import { useContext } from "react";
 import { UserContext } from "../App";
 import { OnlineAccountLink } from "../utils/online-account-link";

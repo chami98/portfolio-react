@@ -7,6 +7,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ProjectCard } from "./project-card";
 import { UserContext } from "../App";
 import { SectionTitle } from "../utils/section-title";
+import { Spacer } from "../utils/spacer";
 
 function Projects() {
   const data = useContext(UserContext);
@@ -19,13 +20,9 @@ function Projects() {
   return (
     <div className="projects" id="projects">
       <Container>
-      <SectionTitle title="Projects" white/>
-        <Row>
-          <Col>
-            <p className="sub-text-1">Pushing the best</p>
-            <p className="sub-text-2">Outcomes</p>
-          </Col>
-        </Row>
+        <SectionTitle title="Projects" white section="project_section" />
+
+       
 
         <Row>
           {items?.map((p, i) => (
