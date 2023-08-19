@@ -18,10 +18,10 @@ function Projects() {
   return (
     <div className="projects" id="projects">
       <Container>
-      <Spacer />
+      <Spacer space={20}/>
         <SectionTitle
           title="Projects"
-          subTitle="Innovating Connected Experiences"
+          section="project_section"
         />
 
         <Spacer />

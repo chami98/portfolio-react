@@ -44,9 +44,11 @@
   justify-content: left;
   align-items: left;
   /* gap: 53px; */
-  border-radius: 20%;
+  border-radius: 20px;
   border: 1px solid #f9f2fc;
   background: #fff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .testimonials-card-text {
@@ -56,7 +58,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 150% */
-  height: 3vw;
+  height: 25vh;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .testimonials-person-name-text {
@@ -67,7 +72,9 @@
   font-weight: 600;
   line-height: 24px; /* 150% */
   margin-top: 20px;
-  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* testimonials.css */
