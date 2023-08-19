@@ -20,7 +20,7 @@ const Testimonials = () => {
     <div className="testimonials-section" id="testimonials">
       <Spacer />
       <Container>
-        <SectionTitle title="Testimonials" subTitle="Impactful Contributions" />
+        <SectionTitle title="Testimonials" section="testimonial_section" />
       </Container>
 
       <Container className="testimonials-container">

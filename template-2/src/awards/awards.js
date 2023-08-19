@@ -8,6 +8,7 @@ import Background from "../assests/profile_background.svg";
 import { OpacityAnimated } from "../utils/opacity-animated";
 import { SectionTitle } from "../utils/section-title";
 import { Spacer } from "../utils/spacer";
+import { AnchorHOC } from "../utils/anchor-hoc";
 
 const Awards = () => {
   const data = useContext(UserContext);
@@ -27,7 +28,7 @@ const Awards = () => {
         <OpacityAnimated visibiltiy={0.9}>
           <div className="awards-container">
             <Container>
-              <SectionTitle title="Awards" subTitle="Celebrating Excellence" />
+              <SectionTitle title="Awards" section="awards_section" />
             </Container>
           </div>
         </OpacityAnimated>
@@ -42,21 +43,23 @@ const Awards = () => {
 
           {items?.map(({ link, image, title, year, description }) => (
             <Col xs={12} md={3} key={link}>
-              <OpacityAnimated visibiltiy={0.6}>
-                <Card className="award-card">
-                  <Card.Img
-                    className="award-image"
-                    variant="top"
-                    src={image || Background}
-                  />
-                  <Card.Body className="awards-body">
-                    <Card.Title className="award-card-title">{`${title} ${year}`}</Card.Title>
-                    <Card.Text className="award-card-text">
-                      {description}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </OpacityAnimated>
+              <AnchorHOC link={link}>
+                <OpacityAnimated visibiltiy={0.6}>
+                  <Card className="award-card">
+                    <Card.Img
+                      className="award-image"
+                      variant="top"
+                      src={image || Background}
+                    />
+                    <Card.Body className="awards-body">
+                      <Card.Title className="award-card-title">{`${title} ${year}`}</Card.Title>
+                      <Card.Text className="award-card-text">
+                        {description}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </OpacityAnimated>
+              </AnchorHOC>
             </Col>
           ))}
         </Row>

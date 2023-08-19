@@ -24,12 +24,12 @@ function Media() {
   const rest = [];
 
   while (items?.length > 0) {
-    if (items4.length + items.length >= 4) {
+    if (items4.length < 4 && items4.length + items.length >= 4) {
       items4.push(items.pop());
       continue;
     }
 
-    if (items3.length + items.length >= 3) {
+    if (items3.length < 3 && items3.length + items.length >= 3) {
       items3.push(items.pop());
       continue;
     }
@@ -40,13 +40,12 @@ function Media() {
   return (
     <div className={`media`} id="media">
       <Container>
-      <SectionTitle title="Media" subTitle="Innovating Connected Experiences" />
-      <Spacer />
-        
+        <SectionTitle title="Media" section="media_sec" />
+        <Spacer />
+
         {items4.length ? <MediaBox4 items={items4} /> : null}
         {items3.length ? <MediaBox3 items={items3} /> : null}
         {rest.length ? <MediaBoxRest items={rest} /> : null}
-
       </Container>
     </div>
   );

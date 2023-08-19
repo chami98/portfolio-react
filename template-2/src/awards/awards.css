@@ -28,6 +28,8 @@
 
 .awards-body {
   /* background: #1e1e1e; */
+  height: 160px;
+  overflow: hidden;
 }
 
 .award-card-title {
@@ -104,8 +106,11 @@
 
   background: white;
   padding: 20px;
-  border-radius: 20% !important;
+  border-radius: 20px !important;
   overflow: hidden;
+
+  margin-bottom: 20px;
+
 }
 
 .award-info {
@@ -126,10 +131,11 @@
   justify-content: center;
   color: #f7f7f7;
   font-family: Satoshi;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 900;
   line-height: 88px;
+  overflow: hidden;
 }
 
 .award-subtitle {
@@ -144,10 +150,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: 88px;
+  overflow: hidden;
+
 }
 
 .award-card .award-image {
-  border-radius: 22%;
+  border-radius: 25px;
 }
 
 @media (max-width: 767.98px) {

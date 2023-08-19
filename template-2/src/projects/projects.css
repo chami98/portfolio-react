@@ -7,11 +7,13 @@
 }
 
 .project-card {
-  border-radius: 20% !important;
+  border-radius: 20px !important;
   overflow: hidden;
-  padding: 13%;
+  padding: 20px;
   margin-left: 5%;
   margin-right: 5%;
+
+  margin-bottom: 20px;
 }
 
 .project-card .card-title {
@@ -28,17 +30,19 @@
 .project-card img {
   object-fit: cover; /* Maintain the image aspect ratio while covering the container */
   height: 300px;
-  border-radius: 20% !important;
+  border-radius: 25px !important;
 }
 
 .project-card .card-description {
-  height: 60px;
+  height: 100px;
   color: #27282f;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 767.98px) {

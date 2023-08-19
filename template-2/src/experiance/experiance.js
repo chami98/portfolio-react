@@ -10,15 +10,12 @@ const Experiance = () => {
     <div>
       <Spacer />
       <Container className="experiance-section" id="experiance">
-        <SectionTitle
-          title="Experiance"
-          subTitle="Crafting IoT Transformations"
-        />
+        <SectionTitle title="Experiance" section="experience_section" />
       </Container>
       <Spacer space={50} />
 
       <ExperianceGraph />
-      <Spacer space={50} />
+      <Spacer space={20} />
     </div>
   );
 };
