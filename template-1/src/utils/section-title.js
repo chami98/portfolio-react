@@ -2,9 +2,19 @@ import { Col, Row } from "react-bootstrap";
 import Icon from "./header-icon.png";
 
 import "./section-title.css";
+import { useContext } from "react";
+import { UserContext } from "../App";
+
 
 export const SectionTitle = ({ title, white = false, section }) => {
-  const subtitle = (section && window?.viewInfo?.getDefaultDescForSection(section)) || null;
+
+  const data = useContext ( UserContext )
+
+  const desc = data?.sections?.[section]?.description;
+
+  console.log('desc', desc)
+
+  const subtitle = desc || (section && window?.viewInfo?.getDefaultDescForSection(section)) || null;
 
   return (
     <Row className="section-title">

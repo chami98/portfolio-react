@@ -18,15 +18,15 @@ export const ContactForm = () => {
   const handleSubmit = async (event) => {
     const form = event.currentTarget;
 
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+    event.preventDefault();
+    event.stopPropagation();
 
+    if (form.checkValidity() === false) {
       alert("please check all fields");
       return;
     }
 
-    setValidated(true);
+    // setValidated(true);
 
     const res = await sendMailNow(firstName, email, message, userEmailId);
 
@@ -42,17 +42,19 @@ export const ContactForm = () => {
     }
   };
 
+  // setValidated(false)
+
   return (
     <Form
       noValidate
       validated={validated}
       onSubmit={handleSubmit}
       className="contact-form-wrapper"
-      controlId="validationCustom01"
+      controlid="validationCustom01"
     >
       <Form.Group
         className="mb-3 contact-input"
-        controlId="exampleForm.ControlInput1"
+        controlid="exampleForm.ControlInput1"
       >
         <Form.Label>First Name</Form.Label>
         <InputGroup hasValidation>
@@ -69,7 +71,7 @@ export const ContactForm = () => {
       </Form.Group>
       <Form.Group
         className="mb-3 contact-input"
-        controlId="exampleForm.ControlInput1"
+        controlid="exampleForm.ControlInput1"
       >
         <Form.Label>Email address</Form.Label>
         <Form.Control
@@ -82,7 +84,7 @@ export const ContactForm = () => {
       </Form.Group>
       <Form.Group
         className="mb-3 contact-input"
-        controlId="exampleForm.ControlTextarea1"
+        controlid="exampleForm.ControlTextarea1"
       >
         <Form.Label>Messsage</Form.Label>
         <Form.Control

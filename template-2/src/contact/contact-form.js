@@ -15,8 +15,6 @@ export const ContactForm = () => {
   const unique_user_id = data?.user_info?.id;
 
   const handleSubmit = async (event) => {
-    const res = await sendMailNow(firstName, email, message, userEmailId);
-
     const form = event.currentTarget;
 
     if (form.checkValidity() === false) {
@@ -27,13 +25,17 @@ export const ContactForm = () => {
       return;
     }
 
-    setValidated(true);
+    // setValidated(true);
+
+    const res = await sendMailNow(firstName, email, message, userEmailId);
 
     if (res) {
       setEmail("");
       setFirstName("");
       setMessage("");
       alert("Message sent");
+      // setValidated(false);
+
       window?.viewInfo?.doAnalytics(unique_user_id, "contact_form", "");
     } else {
       alert("Message sending failed");
@@ -46,11 +48,11 @@ export const ContactForm = () => {
       validated={validated}
       onSubmit={handleSubmit}
       className="contact-form-wrapper"
-      controlId="validationCustom01"
+      controlid="validationCustom01"
     >
       <Form.Group
         className="mb-3 contact-input"
-        controlId="exampleForm.ControlInput1"
+        controlid="exampleForm.ControlInput1"
       >
         <Form.Label>First Name</Form.Label>
         <Form.Control
@@ -62,7 +64,7 @@ export const ContactForm = () => {
       </Form.Group>
       <Form.Group
         className="mb-3 contact-input"
-        controlId="exampleForm.ControlInput1"
+        controlid="exampleForm.ControlInput1"
       >
         <Form.Label>Email address</Form.Label>
         <Form.Control
@@ -75,7 +77,7 @@ export const ContactForm = () => {
       </Form.Group>
       <Form.Group
         className="mb-3 contact-input"
-        controlId="exampleForm.ControlTextarea1"
+        controlid="exampleForm.ControlTextarea1"
       >
         <Form.Label>Messsage</Form.Label>
         <Form.Control
