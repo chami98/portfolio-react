@@ -62,8 +62,6 @@
   font-weight: 400;
   line-height: 35px;
   letter-spacing: 0.3px;
-  text-transform: lowercase;
-
   height: 30vh;
   overflow: hidden;
 
@@ -91,7 +89,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 27.92px;
-  text-transform: lowercase;
 }
 
 /* testimonials.css */
