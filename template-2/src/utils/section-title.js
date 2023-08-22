@@ -1,12 +1,11 @@
 import { Col, Row } from "react-bootstrap";
-import { getDefaultDescForSection } from "../viewInfo";
 
 
 import './section-title.css';
 
 export const SectionTitle = ({ title, section }) => {
   
-  const subTitle = (section && getDefaultDescForSection(section)) || null;
+  const subTitle = (section && window?.viewInfo?.getDefaultDescForSection(section)) || null;
   return (
   <Row className="section-title">
     <Col>

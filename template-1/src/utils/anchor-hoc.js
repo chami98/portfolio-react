@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { UserContext } from "../App";
-import { handleLinkClick } from "../viewInfo";
 
 export const AnchorHOC = ({ children, link }) => {
   const data = useContext(UserContext);
@@ -8,7 +7,7 @@ export const AnchorHOC = ({ children, link }) => {
   const unique_user_id = data?.user_info?.id;
 
   const handleClick = () => {
-    handleLinkClick(unique_user_id, link);
+    window?.viewInfo?.handleLinkClick(unique_user_id, link);
   };
 
   if (link && link !== "#") {

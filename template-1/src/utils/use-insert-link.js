@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 
-export const useInsertLink = (link) => {
+export const useInsertLink = (link, defPrefix="") => {
   useEffect(() => {
     const isDev = process.env.NODE_ENV === "development";
 
-    const prefix = isDev ? "https://efolio-portfolio.web.app" : "../";
+    const prefix = defPrefix ? defPrefix : isDev ? "https://efolio-portfolio.web.app" : "../";
+
     const href = `${prefix}/publicjs/${link}.js`;
     const scriptTag = document.createElement("script");
     scriptTag.src = href;
@@ -12,6 +13,6 @@ export const useInsertLink = (link) => {
     const head = document.head || document.getElementsByTagName("head")[0];
     head.appendChild(scriptTag);
 
-    console.log("href", href);
+
   }, [link]);
 };
