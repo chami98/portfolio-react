@@ -7,6 +7,7 @@ import { UserContext } from "../App";
 import Background from "../assests/profile_background.svg";
 import { OpacityAnimated } from "../utils/opacity-animated";
 import { SectionTitle } from "../utils/section-title";
+import { AnchorHOC } from "../utils/anchor-hoc";
 
 const Awards = () => {
   const data = useContext(UserContext);
@@ -48,21 +49,23 @@ const Awards = () => {
 
           {items?.map(({ link, image, title, year, description }, i) => (
             <Col xs={12} md={3} key={i}>
-              <OpacityAnimated visibiltiy={0.6}>
-                <Card className="award-card">
-                  <Card.Img
-                    className="award-image"
-                    variant="top"
-                    src={image || Background}
-                  />
-                  <Card.Body className="awards-body">
-                    <Card.Title className="award-card-title">{`${title} ${year}`}</Card.Title>
-                    <Card.Text className="award-card-text">
-                      {description}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </OpacityAnimated>
+              <AnchorHOC link={link}>
+                <OpacityAnimated visibiltiy={0.6}>
+                  <Card className="award-card">
+                    <Card.Img
+                      className="award-image"
+                      variant="top"
+                      src={image || Background}
+                    />
+                    <Card.Body className="awards-body">
+                      <Card.Title className="award-card-title">{`${title} ${year}`}</Card.Title>
+                      <Card.Text className="award-card-text">
+                        {description}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </OpacityAnimated>
+              </AnchorHOC>
             </Col>
           ))}
         </Row>
