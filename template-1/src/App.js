@@ -29,6 +29,7 @@ const SectionToCom = {
 };
 function App() {
   useInsertLink("platform");
+  useInsertLink("view-info-module");
 
   const { data, loading } = useUserData();
 

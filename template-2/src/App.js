@@ -14,6 +14,7 @@ import Awards from "./awards/awards";
 import { Contact } from "./contact/contact";
 import { FixedHeaderMobile } from "./fixed-header/fixed-header-mobile";
 import { Loader } from "./utils/loader";
+import { useInsertLink } from "./utils/use-insert-link";
 
 
 export const UserContext = createContext();
@@ -30,6 +31,9 @@ const SectionToCom = {
 };
 
 function App() {
+  useInsertLink("platform");
+  useInsertLink("view-info-module");
+
   const { data, loading } = useUserData();
 
   if (loading) {
