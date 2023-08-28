@@ -15,6 +15,7 @@ import { Contact } from "./contact/contact";
 import { FixedHeaderMobile } from "./fixed-header/fixed-header-mobile";
 import { Loader } from "./utils/loader";
 import { useInsertLink } from "./utils/use-insert-link";
+import Education from "./education/education";
 
 
 export const UserContext = createContext();
@@ -25,8 +26,7 @@ const SectionToCom = {
   project_section: <Projects />,
   testimonial_section: <Testimonials />,
   experience_section: <Experiance />,
-  // education_sec: <Education />,
-  education_sec: <div>Educattion</div>,
+  education_sec: <Education />,
   awards_section: <Awards />,
 };
 

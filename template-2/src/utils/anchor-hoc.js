@@ -12,7 +12,7 @@ export const AnchorHOC = ({ children, link }) => {
 
   if (link && link !== "#") {
     return (
-      <a href={link} target="_blank" onClick={handleClick}>
+      <a href={link} target="_blank" onClick={handleClick} style={{textDecoration: 'none'}}>
         {children}
       </a>
     );

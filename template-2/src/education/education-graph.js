@@ -3,23 +3,18 @@ import { useContext } from "react";
 import { UserContext } from "../App";
 import { OpacityAnimated } from "../utils/opacity-animated";
 
-export const ExperianceGraph = () => {
+export const EducationGraph = () => {
   const data = useContext(UserContext);
 
-
-
-  const items = data?.sections?.experience_section?.data
-    ?.sort((a, b) => (a.fromDate < b.fromDate ? 1 : -1))
-    ?.map((d, i) => ({
-      ...d,
-      src: d.link,
-      side: "right",
-    }));
-
-  const expGraphItems = [];
   
-  let itemIdx = 0;
+  const education = data?.sections?.education_sec?.data;
 
+  const items = []
+
+  if (education?.length) {
+    items.push(...education)
+    
+  }
 
   return (
     <>
